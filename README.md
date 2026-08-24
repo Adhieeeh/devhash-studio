@@ -11,7 +11,7 @@ DevHash is an interactive distributed systems laboratory and Consistent Hashing 
 *  **Minimal Rebalance Scaling:** Demonstrates zero-downtime cluster mutations where adding/draining nodes only moves $O(K/N)$ keys instead of triggering global reshuffles.
 *  **Clockwise Coordinator Routing:** Computes clockwise boundary searches to resolve the coordinator replica node for any partition key.
 
-##  Running Instructions
+##  Preview
 
 
 
