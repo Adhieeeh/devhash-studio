@@ -14,5 +14,5 @@ DevHash is an interactive distributed systems laboratory and Consistent Hashing 
 ##  Running Instructions
 
 -----------------------------------------
-1. Install dependencies: `npm install`
+
 
