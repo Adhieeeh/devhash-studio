@@ -12,5 +12,7 @@ DevHash is an interactive distributed systems laboratory and Consistent Hashing 
 *  **Clockwise Coordinator Routing:** Computes clockwise boundary searches to resolve the coordinator replica node for any partition key.
 
 ##  Running Instructions
+
+-----------------------------------------
 1. Install dependencies: `npm install`
 2. Launch dev server: `npm run dev`
