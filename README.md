@@ -1,4 +1,4 @@
-#  DevHash — Distributed Consistent Hashing & Ring Sharding Studio (React)
+#  DevHash (React)
 
 DevHash is an interactive distributed systems laboratory and Consistent Hashing ring simulator built with React. It models the core partitioning algorithms powering distributed databases and cache clusters (Amazon DynamoDB, Apache Cassandra, Memcached, Cloudflare): continuous $360^\circ$ token ring mapping, configurable Virtual Nodes (vnodes), minimal $O(K/N)$ key rebalancing on cluster mutations, and clockwise coordinator routing traces.
 
