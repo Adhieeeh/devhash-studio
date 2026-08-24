@@ -1,16 +1,13 @@
-# React + Vite
+# 🌐 DevHash — Distributed Consistent Hashing & Ring Sharding Studio (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DevHash is an interactive distributed systems laboratory and Consistent Hashing ring simulator built with React. It models the core partitioning algorithms powering distributed databases and cache clusters (Amazon DynamoDB, Apache Cassandra, Memcached, Cloudflare): continuous $360^\circ$ token ring mapping, configurable Virtual Nodes (vnodes), minimal $O(K/N)$ key rebalancing on cluster mutations, and clockwise coordinator routing traces.
 
-Currently, two official plugins are available:
+## ⚡ Technical Architecture Overview
+* ⭕ **Continuous Token Ring ($360^\circ$ Space):** Hashes physical server nodes and partition keys into a circular token space using deterministic string hashing.
+* 🧩 **Virtual Node (VNode) Balancing:** Allocates configurable vnode slices per physical node to ensure uniform hash distribution and eliminate data hotspot skews.
+* ⚖️ **Minimal Rebalance Scaling:** Demonstrates zero-downtime cluster mutations where adding/draining nodes only moves $O(K/N)$ keys instead of triggering global reshuffles.
+* 🎯 **Clockwise Coordinator Routing:** Computes clockwise boundary searches to resolve the coordinator replica node for any partition key.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Running Instructions
+1. Install dependencies: `npm install`
+2. Launch dev server: `npm run dev`
