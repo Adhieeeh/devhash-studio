@@ -5,7 +5,7 @@ DevHash is an interactive distributed systems laboratory and Consistent Hashing 
 ##  Technical Architecture Overview
 *  **Continuous Token Ring ($360^\circ$ Space):** Hashes physical server nodes and partition keys into a circular token space using deterministic string hashing.
 * 🧩 **Virtual Node (VNode) Balancing:** Allocates configurable vnode slices per physical node to ensure uniform hash distribution and eliminate data hotspot skews.
-* ⚖️ **Minimal Rebalance Scaling:** Demonstrates zero-downtime cluster mutations where adding/draining nodes only moves $O(K/N)$ keys instead of triggering global reshuffles.
+*  **Minimal Rebalance Scaling:** Demonstrates zero-downtime cluster mutations where adding/draining nodes only moves $O(K/N)$ keys instead of triggering global reshuffles.
 * 🎯 **Clockwise Coordinator Routing:** Computes clockwise boundary searches to resolve the coordinator replica node for any partition key.
 
 ## ⚙️ Running Instructions
