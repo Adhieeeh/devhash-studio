@@ -13,7 +13,7 @@ DevHash is an interactive distributed systems laboratory and Consistent Hashing 
 
 ##  Preview
 --------------------------------------------------------------------
-!
+![]
 
 
 
